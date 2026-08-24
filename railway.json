@@ -1,5 +1,11 @@
 {
   "deploy": {
     "startCommand": "python chat_server.py"
+  },
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacks": {
+      "setup": "python3 -m pip install -r requirements.txt"
+    }
   }
 }
